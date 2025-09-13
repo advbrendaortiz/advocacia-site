@@ -3,11 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://advbrendaortiz.github.io/advocacia-site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+   
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -33,14 +37,5 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "vite": "^5.0.8"
-  },
-  {
-  "name": "advocacia-site",
-  "homepage": "https://github.com/advbrendaortiz/advocacia-site",
-  "scripts": {
-    "build": "vite build",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
   }
-}
 }
