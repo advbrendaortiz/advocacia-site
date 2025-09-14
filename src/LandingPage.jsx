@@ -115,7 +115,7 @@ const LandingPage = () => {
             <div className="about-photo">
               <div className="professional-photo">
                 <img 
-                  src="/dra-brenda.jpg" 
+                  src={import.meta.env.PROD ? "/advocacia-site/dra-brenda.jpg" : "/dra-brenda.jpg"}
                   alt="Dra. Brenda Ortiz Ferreira - Advogada especializada em Direito Digital"
                   className="photo-image"
                 />

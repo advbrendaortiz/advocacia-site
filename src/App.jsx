@@ -4,9 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage";
 
 function App() {
+  const basename = import.meta.env.PROD ? "/advocacia-site" : "";
+  
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
         </Routes>
@@ -14,5 +16,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default App;  // CERTIFIQUE-SE QUE ESTA LINHA EXISTE
